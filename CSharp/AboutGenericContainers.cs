@@ -46,8 +46,8 @@ namespace DotNetKoans.CSharp
 			ArrayList list = new ArrayList();
 			list.Add(42);
 			list.Add("fourty two");
-			Assert.Equal(FILL_ME_IN, list[0]);
-			Assert.Equal(FILL_ME_IN, list[1]);
+			Assert.Equal(42, list[0]);
+			Assert.Equal("fourty two", list[1]);
 
 			//While there are a few cases where it could be nice, instead what it means is that 
 			//anytime your code works with an array list you have to check that the element is 
@@ -78,10 +78,10 @@ namespace DotNetKoans.CSharp
 			//The "T" in the definition of List<T> is the type argument. You cannot declare an instace of List<T> without also
 			//supplying a type in place of T.
 			var list = new List<int>();
-			Assert.Equal(FILL_ME_IN, list.Count);
+			Assert.Equal(0, list.Count);
 
 			list.Add(42);
-			Assert.Equal(FILL_ME_IN, list.Count);
+			Assert.Equal(1, list.Count);
 
 			//Now just like int[], you can have a type safe dynamic sized container
 			//list.Add("fourty two"); //<--Unlike ArrayList this is illegal.
