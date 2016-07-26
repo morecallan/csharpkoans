@@ -133,7 +133,7 @@ namespace DotNetKoans.CSharp
 		public void ConvertingToFixedSizeArray()
 		{
 			List<int> list = new List<int> { 1, 2, 3 };
-			Assert.Equal(FILL_ME_IN, list.ToArray());
+			Assert.Equal(new int[] { 1, 2, 3 },  list.ToArray());
 		}
 		[Koan(13)]
 		public void InsertingInTheMiddle()
