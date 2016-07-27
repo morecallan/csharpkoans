@@ -274,8 +274,8 @@ namespace DotNetKoans.CSharp
 		{
 			Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			dictionary["one"] = "uno";
-			Assert.Equal(FILL_ME_IN, dictionary.ContainsKey("one"));
-			Assert.Equal(FILL_ME_IN, dictionary.ContainsKey("two"));
+			Assert.Equal(true, dictionary.ContainsKey("one"));
+			Assert.Equal(false, dictionary.ContainsKey("two"));
 		}
 
 		[Koan(26)]
@@ -284,8 +284,8 @@ namespace DotNetKoans.CSharp
 			// This should have been at the top
 			Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			dictionary["one"] = "uno";
-			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("uno"));
-			Assert.Equal(FILL_ME_IN, dictionary.ContainsValue("dos"));
+			Assert.Equal(true, dictionary.ContainsValue("uno"));
+			Assert.Equal(false, dictionary.ContainsValue("dos"));
 		}
 
 		[Koan(27)]
@@ -302,7 +302,7 @@ namespace DotNetKoans.CSharp
 			{
 				result = "dos";
 			}
-			Assert.Equal(FILL_ME_IN, result);
+			Assert.Equal("dos", result);
 		}
 
 		[Koan(28)]
