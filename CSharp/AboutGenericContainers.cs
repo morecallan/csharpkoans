@@ -315,13 +315,13 @@ namespace DotNetKoans.CSharp
 			{
 				result = "is the lonliest number";
 			}
-			Assert.Equal(FILL_ME_IN, result);
+			Assert.Equal("uno", result);
 
 			if (!dictionary.TryGetValue("two", out result))
 			{
 				result = "dos";
 			}
-			Assert.Equal(FILL_ME_IN, result);
+			Assert.Equal("dos", result);
 		}
 		[Koan(29)]
 		public void InitializingADictionary()
